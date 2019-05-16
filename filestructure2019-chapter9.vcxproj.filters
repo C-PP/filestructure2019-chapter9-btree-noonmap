@@ -45,6 +45,9 @@
     <ClCompile Include="simpind.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="testbtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="tstbtree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -1,9 +1,13 @@
+#pragma once
 //indbuff.h
 #ifndef INDBUFF_H
 #define INDBUFF_H
 
+#include <iostream>
 #include "simpind.h"
 #include "fixfld.h"
+
+using namespace std;
 
 // class IndexBuffer supports reading and writing index records from
 //	class SimpIndex by key value.
@@ -15,14 +19,14 @@
 // We need assignment and equality on the key values
 
 template <class keyType>
-class IndexBuffer: public FixedFieldBuffer
+class IndexBuffer : public FixedFieldBuffer
 {
-  public:
+public:
 	IndexBuffer(int maxKeys = 100, int keySize = sizeof(keyType));
-	int Pack (const SimpleIndex<keyType> &);
-	int Unpack (SimpleIndex<keyType> &);
-	void Print (ostream &) const;
-  protected:
+	int Pack(SimpleIndex<keyType> &);
+	int Unpack(SimpleIndex<keyType> &);
+	void Print(ostream &) const;
+protected:
 	int MaxKeys;
 	int KeySize;
 };
