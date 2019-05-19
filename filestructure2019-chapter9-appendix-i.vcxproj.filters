@@ -42,6 +42,9 @@
     <ClCompile Include="length.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="recording.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="simpind.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -84,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="recfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="recording.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="simpind.h">

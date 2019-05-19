@@ -1,4 +1,5 @@
 //tstbtree.cc
+/*
 #include "btnode.h"
 #include "btnode.tc"
 #include "btree.h"
@@ -23,5 +24,4 @@ main (int argc, char * argv)
 	bt.Search(1,1);
 	return 1;
 }
-
-
+*/

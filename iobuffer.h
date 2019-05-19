@@ -5,11 +5,13 @@
 #include <stdlib.h>
 #include <iostream>
 
+using namespace std;
+
 #ifndef FALSE
 #define FALSE (0)
 #define TRUE (1)
 #endif
-using namespace std;
+
 class IOBuffer
 	// An abstract base class for file buffers
 	// Record variables can be packed into and extracted from a buffer.

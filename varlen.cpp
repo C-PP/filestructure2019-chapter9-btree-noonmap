@@ -2,8 +2,7 @@
 
 #include "varlen.h"
 #include <string.h>
-#include <iostream>
-using namespace std;
+
 //class VariableLengthBuffer
 
 // public members
@@ -52,8 +51,9 @@ int VariableLengthBuffer::Write(ostream & stream) const
 	return recaddr;
 }
 
-const char * headerStr = "Variable"; //number of stored records, marker for record separation
-const int headerSize = strlen(headerStr);
+const char * headerStr = "Variable";
+//const int headerSize = strlen(headerStr);
+const int headerSize = 8;
 
 int VariableLengthBuffer::ReadHeader(istream & stream)
 // read the header and check for consistency

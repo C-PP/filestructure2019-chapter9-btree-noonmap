@@ -7,7 +7,7 @@
 #include "btnode.h"
 #include "recfile.h"
 #include "fixfld.h"
-#include "indbuff.h"
+//#include "indbuff.h"
 
 // btree needs to be able to pack, unpack, read and
 // 	write index records
@@ -16,7 +16,7 @@
 //	a pool of nodes will be managed
 //	keep at least a branch of the tree in memory
 //	
-
+template <class keyType> class BTreeNode;
 template <class keyType> class BTree
 	// this is the full version of the BTree
 {

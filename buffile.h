@@ -54,5 +54,6 @@ protected:
 	int WriteHeader();
 };
 
+
 #endif
 

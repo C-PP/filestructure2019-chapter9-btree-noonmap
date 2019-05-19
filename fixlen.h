@@ -6,7 +6,9 @@
 #include <stdlib.h>
 #include <iostream>
 #include "iobuffer.h"
+
 using namespace std;
+
 class FixedLengthBuffer : public IOBuffer
 	// Abstract class designed to support fixed length records
 {

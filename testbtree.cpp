@@ -1,19 +1,16 @@
-#pragma warning(disable:4996)
+//#pragma warning(disable:4996)
 //tstbtree.cc
-#include "btnode.h"
-#include "btnode.cpp"
+//#include "btnode.h"
 #include "btree.h"
-#include "btree.cpp"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
 const char * keys = "CSDTAMPIBWNGURKEHOLJYQZFXV";
-
+template <class keyType> class BTree;
 const int BTreeSize = 3;
-int main(int argc, char * argv){
-
+int main(int argc, char * argv) {
 	int result, i;
 	BTree <char> bt(BTreeSize);
 	cout << "input data = " << keys << endl;
@@ -34,5 +31,3 @@ int main(int argc, char * argv){
 	system("pause");
 	return 1;
 }
-
-

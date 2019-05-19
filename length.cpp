@@ -1,8 +1,7 @@
 // lentext.cc
 #include "length.h"
 #include <string.h>
-#include <iostream>
-using namespace std;
+
 //class LengthFieldBuffer 
 
 // public members

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{38A98203-97FF-4139-ABD6-256FF6D97C43}</ProjectGuid>
+    <ProjectGuid>{8F4DFC41-D202-43B0-964B-A9307D6F9493}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -108,6 +108,7 @@
     <ClCompile Include="indnode.cpp" />
     <ClCompile Include="iobuffer.cpp" />
     <ClCompile Include="length.cpp" />
+    <ClCompile Include="recording.cpp" />
     <ClCompile Include="simpind.cpp" />
     <ClCompile Include="testbtree.cpp" />
     <ClCompile Include="tstbtree.cpp" />
@@ -124,6 +125,7 @@
     <ClInclude Include="iobuffer.h" />
     <ClInclude Include="length.h" />
     <ClInclude Include="recfile.h" />
+    <ClInclude Include="recording.h" />
     <ClInclude Include="simpind.h" />
     <ClInclude Include="varlen.h" />
   </ItemGroup>

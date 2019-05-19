@@ -3,10 +3,13 @@
 #ifndef FIXFLD_H
 #define FIXFLD_H
 
-#include <stdlib.h>
 #include <iostream>
+#include <ostream>
 #include "fixlen.h"
+
 using namespace std;
+
+
 class FixedFieldBuffer : public FixedLengthBuffer
 	// Abstract class designed to support fixed length records
 	// Use of this class requires that all fields be defined before

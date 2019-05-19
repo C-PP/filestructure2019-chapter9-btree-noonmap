@@ -2,9 +2,8 @@
 
 #include "fixlen.h"
 #include "length.h"
-#include <string.h>
-#include <iostream>
-using namespace std;
+#include <string>
+
 //class FixedLengthBuffer
 
 // public members
@@ -47,7 +46,9 @@ int FixedLengthBuffer::Write(ostream & stream) const
 }
 
 static const char * headerStr = "Fixed";
-static const int headerStrSize = strlen(headerStr);
+//static const int headerStrSize = strlen(headerStr);
+//static const int headerStrSize = strlen(headerStr);
+static const int headerStrSize = 5;
 
 int FixedLengthBuffer::ReadHeader(istream & stream)
 // read the header and check for consistency

@@ -1,9 +1,8 @@
 // iobuffer.cc
 
 #include "iobuffer.h"
-#include <string.h>
-#include <iostream>
-using namespace std;
+#include <string>
+
 IOBuffer::IOBuffer(int maxBytes)
 // construct with a maximum of maxFields
 {
@@ -47,7 +46,9 @@ int IOBuffer::DRead(istream & stream, int recref)
 // read specified record
 {
 	stream.seekg(recref, ios::beg);
-	//if (stream.tellg() !=  recref) return -1;//overload된 피연산자 에러 발생 - 확인 필요
+	int length = stream.tellg();
+	//if (stream.tellg() != recref) return -1;
+	if (length != recref) return -1;
 	return Read(stream);
 }
 
@@ -55,13 +56,14 @@ int IOBuffer::DWrite(ostream & stream, int recref) const
 // write specified record
 {
 	stream.seekp(recref, ios::beg);
-	//if (stream.tellp() != recref) return -1;//overload된 피연산자 에러 발생 - 확인 필요
+	int length = stream.tellp();
+	if (length != recref) return -1;
 	return Write(stream);
 }
 
 static const char * headerStr = "IOBuffer";
-static const int headerSize = 9;
-//static const int headerSize = strlen(headerStr);//원본
+//static const int headerSize = strlen(headerStr);
+static const int headerSize = 8;
 
 int IOBuffer::ReadHeader(istream & stream)
 {
@@ -80,3 +82,4 @@ int IOBuffer::WriteHeader(ostream & stream) const
 	if (!stream.good()) return -1;
 	return headerSize;
 }
+

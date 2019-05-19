@@ -1,10 +1,12 @@
 // fixlen.cc
-
+#include <iostream>
 #include "fixfld.h"
 #include "length.h"
 #include <string.h>
-#include <iostream>
-using namespace std;
+#include <istream>
+#include <ostream>
+
+
 //class FixedFieldBuffer
 
 // public members
@@ -119,7 +121,6 @@ int FixedFieldBuffer::WriteHeader(ostream & stream) const
 //	Header record size	2 bytes
 //	number of fields		4 bytes
 //	field sizes			4 bytes per field
-//	headerStr should include all information
 {
 	int result;
 	if (!Initialized) return -1; // cannot write unitialized buffer

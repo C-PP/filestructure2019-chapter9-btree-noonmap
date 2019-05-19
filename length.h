@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include "varlen.h"
-using namespace std;
+
 class LengthFieldBuffer : public VariableLengthBuffer
 	// a buffer which holds a length plus value fields.
 	// Record variables can be packed into and extracted from a buffer.

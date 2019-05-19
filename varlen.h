@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include "iobuffer.h"
-using namespace std;
+
 class VariableLengthBuffer : public IOBuffer
 	// Abstract class designed to support variablelength records
 	// Fields may be of a variety of types

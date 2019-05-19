@@ -17,7 +17,7 @@ using namespace std;
 // are very different. presently, this supports char * properly,
 // but fails for int! 
 // We need assignment and equality on the key values
-
+template <class keyType> class SimpleIndex;
 template <class keyType>
 class IndexBuffer : public FixedFieldBuffer
 {
